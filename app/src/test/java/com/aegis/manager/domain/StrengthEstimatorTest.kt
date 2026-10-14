@@ -27,9 +27,16 @@ class StrengthEstimatorTest {
 
     @Test
     fun `a long mixed password is excellent`() {
-        val password = "Xk9#mP2vTq!Lz4W"
+        val password = "Xk9#mP2vTq!Lz4W\$Bn6&"
+        assertEquals(20, password.length)
         assertEquals(Strength.EXCELLENT, StrengthEstimator.estimate(password))
         assertTrue(StrengthEstimator.score(password) >= 85)
+    }
+
+    @Test
+    fun `a good 15 character password is strong but not excellent`() {
+        val password = "Xk9#mP2vTq!Lz4W"
+        assertEquals(Strength.STRONG, StrengthEstimator.estimate(password))
     }
 
     @Test

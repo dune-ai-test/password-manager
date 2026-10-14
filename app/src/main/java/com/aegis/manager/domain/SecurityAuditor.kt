@@ -47,6 +47,18 @@ object SecurityAuditor {
      */
     private val KNOWN_BREACHES = setOf("linkedin", "dropbox", "myspace", "adobe", "canva")
 
+    /**
+     * Matches on the registrable host, so "linkedin.com", "www.linkedin.com" and
+     * "https://linkedin.com/login" all resolve to the same breach entry.
+     */
+    private fun isKnownBreach(title: String): Boolean {
+        val host = title.lowercase()
+            .substringAfter("://", title.lowercase())
+            .removePrefix("www.")
+            .substringBefore('/')
+        return KNOWN_BREACHES.any { host == it || host.startsWith("$it.") }
+    }
+
     fun audit(items: List<VaultItem>): SecurityReport {
         val logins = items.filter { it.type == ItemType.LOGIN && it.password.isNotBlank() }
 
@@ -56,7 +68,7 @@ object SecurityAuditor {
                 WeakEntry(
                     item = item,
                     strength = StrengthEstimator.estimate(item.password),
-                    note = if (item.title.lowercase() in KNOWN_BREACHES) {
+                    note = if (isKnownBreach(item.title)) {
                         "Leaked in 2012 breach"
                     } else {
                         "Created in ${yearOf(item.updatedAt)}"
@@ -73,9 +85,7 @@ object SecurityAuditor {
 
         val missingTwoFactor = logins.count { !it.hasTwoFactor }
 
-        val breached = weakEntries.filter { entry ->
-            entry.item.title.lowercase() in KNOWN_BREACHES
-        }
+        val breached = weakEntries.filter { entry -> isKnownBreach(entry.item.title) }
 
         val score = computeScore(
             total = logins.size,
