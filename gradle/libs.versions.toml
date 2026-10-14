@@ -39,7 +39,9 @@ androidx-room-runtime = { group = "androidx.room", name = "room-runtime", versio
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 
-androidx-biometric = { group = "androidx.biometric", name = "biometric-ktx", version.ref = "biometric" }
+# 1.1.0 is the latest stable release of androidx.biometric. The -ktx artifact
+# only exists from 1.2.0-alpha02 onwards, so the base artifact is the right one.
+androidx-biometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
 
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
