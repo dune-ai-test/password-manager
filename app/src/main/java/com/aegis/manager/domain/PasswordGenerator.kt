@@ -54,7 +54,20 @@ class PasswordGenerator(private val random: Random = Random.Default) {
         }
 
         // Shuffle so the guaranteed characters are not always in front.
-        return out.toString().shuffled(rnd)
+        return shuffle(out.toString(), rnd)
+    }
+
+    /** Fisher-Yates over the characters, so the shuffle does not depend on a
+     *  particular stdlib extension signature. */
+    private fun shuffle(chars: String, rnd: Random): String {
+        val list = chars.toMutableList()
+        for (i in list.lastIndex downTo 1) {
+            val j = rnd.nextInt(i + 1)
+            val tmp = list[i]
+            list[i] = list[j]
+            list[j] = tmp
+        }
+        return list.joinToString("")
     }
 
     private fun memorable(options: GeneratorOptions, rnd: Random): String {
