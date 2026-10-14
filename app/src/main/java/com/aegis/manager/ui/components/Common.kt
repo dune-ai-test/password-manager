@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.Refresh
-import androidx.compose.material.Icons.Outlined.VpnKey
+import androidx.compose.material.icons.outlined.VpnKey
 import com.aegis.manager.ui.theme.AegisOnPrimary
 import com.aegis.manager.ui.theme.AegisOutline
 import com.aegis.manager.ui.theme.AegisPrimary
