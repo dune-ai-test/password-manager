@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aegis</string>
+
+    <!-- MM1 Onboarding -->
+    <string name="onboarding_title">Every password, one tap away</string>
+    <string name="onboarding_subtitle">Aegis keeps your login encrypted and synced in one calm place.</string>
+    <string name="onboarding_feature_biometric_title">Biometric unlock</string>
+    <string name="onboarding_feature_biometric_body">Open your vault in half a second.</string>
+    <string name="onboarding_feature_zero_title">Zero-knowledge</string>
+    <string name="onboarding_feature_zero_body">We can\'t read your data. Only you can.</string>
+    <string name="onboarding_cta_create">Create master password</string>
+    <string name="onboarding_cta_existing">I already have an account</string>
+    <string name="onboarding_legal">By continuing you agree to the Terms and Privacy Policy</string>
+
+    <!-- MM2 Create master password -->
+    <string name="create_master_title">Set your master password</string>
+    <string name="create_master_subtitle">It\'s the only password you\'ll ever need to remember. Make it long and unique.</string>
+    <string name="create_master_strength_label">Password strength</string>
+    <string name="create_master_rule_length">At least 12 characters</string>
+    <string name="create_master_rule_mixed">Upper and lowercase letters</string>
+    <string name="create_master_rule_number">A number or symbol</string>
+    <string name="create_master_warning">If you forget your master password, no one - not even us - can restore your vault.</string>
+    <string name="create_master_continue">Continue</string>
+    <string name="action_back">Back</string>
+
+    <!-- MM3 Unlock -->
+    <string name="unlock_title">Welcome back</string>
+    <string name="unlock_subtitle">Enter your master password to unlock %1$d saved items.</string>
+    <string name="unlock_action">Unlock</string>
+    <string name="unlock_or">or</string>
+    <string name="unlock_biometric">Unlock with Biometric</string>
+    <string name="unlock_forgot">Forgot master password?</string>
+
+    <!-- Shared -->
+    <string name="nav_passwords">Passwords</string>
+    <string name="nav_generator">Generator</string>
+    <string name="nav_security">Security</string>
+    <string name="nav_settings">Settings</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_copy_password">Copy password</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Move to trash</string>
+    <string name="field_username">Username</string>
+    <string name="field_password">Password</string>
+    <string name="field_website">Website</string>
+    <string name="field_notes">Notes</string>
+    <string name="field_title">Title</string>
+
+    <!-- MM4 Passwords -->
+    <string name="passwords_title">Passwords</string>
+    <string name="passwords_search_hint">Search passwords</string>
+
+    <!-- MM5 Category -->
+    <string name="category_title">Logins</string>
+    <string name="category_summary">%1$d logins · sorted A-Z</string>
+
+    <!-- MM6 Login detail -->
+    <string name="detail_last_changed">Last changed</string>
+
+    <!-- MM7 New item -->
+    <string name="new_item_title">New Login</string>
+    <string name="new_item_type_login">Login</string>
+    <string name="new_item_save">Save login</string>
+    <string name="new_item_suggested">Suggested</string>
+
+    <!-- MM10 Generator -->
+    <string name="generator_title">Generator</string>
+    <string name="generator_strength">Strength</string>
+    <string name="generator_regenerate">Regenerate</string>
+    <string name="generator_length">Length</string>
+    <string name="generator_uppercase">Uppercase (A-Z)</string>
+    <string name="generator_lowercase">Lowercase (a-z)</string>
+    <string name="generator_numbers">Numbers (0-9)</string>
+    <string name="generator_symbols">Symbols (!@#)</string>
+    <string name="generator_avoid_lookalikes">Avoid look-alikes</string>
+    <string name="generator_random">Random</string>
+    <string name="generator_memorable">Memorable</string>
+    <string name="generator_generate">Generate new password</string>
+
+    <!-- MM11 Security -->
+    <string name="security_title">Security</string>
+    <string name="security_score">Security score</string>
+    <string name="security_last_checked">Last checked today</string>
+    <string name="security_weak">Weak</string>
+    <string name="security_reused">Reused</string>
+    <string name="security_missing_2fa">Missing 2FA</string>
+    <string name="security_breached">Breached</string>
+    <string name="security_breach_title">LinkedIn breach detected</string>
+    <string name="security_breach_body">This password appeared in a 2012 leak. Change it now.</string>
+    <string name="security_breach_review">Review</string>
+    <string name="security_reuse_title">Reuse detected</string>
+    <string name="security_reuse_body">5 accounts share \"Summer21!\". Update takes ~2 min.</string>
+    <string name="security_reuse_fix">Fix</string>
+    <string name="security_weak_title">Weak passwords</string>
+
+    <!-- MM12 Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_profile_name">Alex Morgan</string>
+    <string name="settings_auto_lock">Auto-lock</string>
+    <string name="settings_biometric">Biometric</string>
+    <string name="settings_biometric_value">Master password</string>
+    <string name="settings_two_factor">Two-factor auth</string>
+    <string name="settings_autofill">Autofill</string>
+    <string name="settings_import_export">Import &amp; export</string>
+    <string name="settings_backup">Backup</string>
+    <string name="settings_backup_today">Today</string>
+    <string name="settings_shared">Shared items</string>
+    <string name="settings_help">Help &amp; support</string>
+    <string name="settings_about">About Aegis</string>
+    <string name="settings_version">Version %1$s (%2$d)</string>
+    <string name="settings_on">On</string>
+    <string name="settings_one_minute">1 minute</string>
+
+    <!-- MM13 Search -->
+    <string name="search_results_for">%1$d results for \"%1$s\"</string>
+    <string name="search_filter_all">All</string>
+    <string name="search_filter_logins">Logins</string>
+    <string name="search_try_heading">Try searching for</string>
+    <string name="search_suggest_work_email">work email</string>
+    <string name="search_suggest_passport">passport</string>
+    <string name="search_suggest_wifi">wifi</string>
+</resources>

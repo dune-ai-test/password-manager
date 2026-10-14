@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aegis_bg">#0E0E11</color>
+    <color name="aegis_primary">#C9F158</color>
+    <color name="aegis_on_primary">#14170A</color>
+    <color name="ic_launcher_background">#0E0E11</color>
+</resources>

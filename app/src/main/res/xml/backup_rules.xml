@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   This build stores the vault in a local Room database. It is demo data, not
+   real secrets, so the backup rules simply exclude nothing today. Replace this
+   with an exclude rule for the vault file once field-level encryption lands.
+-->
+<full-backup-content>
+    <exclude domain="database" path="aegis-vault.db" />
+</full-backup-content>

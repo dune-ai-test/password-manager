@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The Compose theme owns all in-app colour; this style only needs to give
+         the window the right background so the launch frame does not flash white. -->
+    <style name="Theme.Aegis" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/aegis_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
