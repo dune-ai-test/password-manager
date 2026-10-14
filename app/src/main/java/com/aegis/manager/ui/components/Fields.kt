@@ -68,7 +68,7 @@ fun AegisTextField(
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .height(minHeight.dp.coerceAtLeast(24))
+            .height(minHeight.dp.coerceAtLeast(24.dp))
             .clip(RoundedCornerShape(14.dp))
             .background(AegisSurface2)
             .border(1.dp, AegisOutline, RoundedCornerShape(14.dp))

@@ -31,6 +31,7 @@ import com.aegis.manager.ui.theme.AegisBg
 import com.aegis.manager.ui.theme.AegisOutline
 import com.aegis.manager.ui.theme.AegisPrimary
 import com.aegis.manager.ui.theme.AegisSurface
+import com.aegis.manager.ui.theme.AegisSurface2
 import com.aegis.manager.ui.theme.AegisText2
 
 enum class AegisTab(

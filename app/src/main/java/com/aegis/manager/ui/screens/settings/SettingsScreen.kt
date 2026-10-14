@@ -111,7 +111,10 @@ fun SettingsScreen(onSelectTab: (AegisTab) -> Unit) {
                 icon = Icons.Outlined.VerifiedUser,
                 iconTint = AegisTeal,
                 trailing = {
-                    AegisToggle(twoFactorOn) { twoFactorOn = it }
+                    AegisToggle(
+                        checked = twoFactorOn,
+                        onCheckedChange = { twoFactorOn = it },
+                    )
                 },
             )
             Box(Modifier.size(8.dp))

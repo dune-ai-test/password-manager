@@ -21,6 +21,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -50,7 +53,7 @@ fun PasswordsScreen(
     viewModel: VaultListViewModel = hiltViewModel(),
 ) {
     val items by viewModel.logins.collectAsStateWithLifecycle()
-    var filter by androidx.compose.runtime.remember { androidx.compose.runtime.mutableStateOf(FILTER_ALL) }
+    var filter by remember { mutableStateOf(FILTER_ALL) }
 
     val visible = when (filter) {
         FILTER_ALL -> items

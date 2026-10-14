@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.Refresh
-import androidx.compose.material.icons.outlined.KeyRound
+import androidx.compose.material.Icons.Outlined.VpnKey
 import com.aegis.manager.ui.theme.AegisOnPrimary
 import com.aegis.manager.ui.theme.AegisOutline
 import com.aegis.manager.ui.theme.AegisPrimary
@@ -129,7 +129,7 @@ fun AegisLogoMark(size: Int = 88, modifier: Modifier = Modifier) {
         contentAlignment = Alignment.Center,
     ) {
         Icon(
-            imageVector = Icons.Outlined.KeyRound,
+            imageVector = Icons.Outlined.VpnKey,
             contentDescription = null,
             tint = AegisOnPrimary,
             modifier = Modifier.size((size * 0.48f).dp),
